@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "ts-node-dev --files src/index.ts"
+    "dev": "ts-node-dev --files src/index.ts",
+    "generate": "ts-node ./node_modules/typeorm/cli.js migration:generate -d src/config/data-source.ts src/migrations/migration -p"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^9.1.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.21"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
