@@ -3,3 +3,9 @@ backend/node_modules
 frontend/node_modules
 .idea
 .env
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/

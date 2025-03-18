@@ -4,7 +4,8 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "ts-node-dev --files src/index.ts",
-    "generate": "ts-node ./node_modules/typeorm/cli.js migration:generate -d src/config/data-source.ts src/migrations/migration -p"
+    "generate": "ts-node ./node_modules/typeorm/cli.js migration:generate -d src/config/data-source.ts src/migrations/migration -p",
+    "scaffold": "typeorm-model-generator -h localhost -d master -u sa -x bazaTestowa1234 -e mssql"
   },
   "keywords": [],
   "author": "",
