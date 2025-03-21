@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "ts-node-dev --files src/index.ts",
     "generate": "ts-node ./node_modules/typeorm/cli.js migration:generate -d src/config/data-source.ts src/migrations/migration -p",
+    "migrate": "ts-node ./node_modules/typeorm/cli.js migration:run -d src/config/data-source.ts",
     "scaffold": "typeorm-model-generator -h localhost -d master -u sa -x bazaTestowa1234 -e mssql"
   },
   "keywords": [],
@@ -17,7 +18,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^9.0.2",
+    "libphonenumber-js": "^1.12.6",
     "mssql": "^9.1.1",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.3.21"
